@@ -129,14 +129,6 @@ input {
   font-size: 0.9rem;
 }
 
-.profile-links div,
-.profile-links ul {
-}
-
-/* .profile-links div {
-  display: grid;
-  grid-template-columns: 200px 200px;
-} */
 .greeting {
   display: flex;
   flex-direction: column;
@@ -167,8 +159,11 @@ input {
 }
 main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(auto-fill, minmax(22rem, 1fr));
+  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: 2fr 1fr; */
+
+  /* grid-template-rows: repeat(auto-fill, minmax(22rem, 1fr)); */
   background-color: rgb(219, 226, 236);
   gap: 1rem;
   padding: 0 1rem;
@@ -178,9 +173,11 @@ main {
   grid-row: 1 / -1;
   display: grid;
   /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-rows: 3.125rem repeat(auto-fill, minmax(14rem, 1fr)); */
 
-  grid-template-rows: 3.125rem repeat(auto-fill, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-rows: 3.125rem repeat(auto-fit, minmax(14rem, 1fr));
   gap: 1rem;
   padding: 1rem;
 }
@@ -193,6 +190,8 @@ main {
   grid-column: 1/-1;
 }
 .card {
+  display: grid;
+  /* align-items: end; */
   border-left: 0.4rem solid rgb(228, 196, 132);
   padding: 1rem;
   background-color: white;
@@ -206,6 +205,7 @@ main {
 }
 
 .icons {
+  align-self: end;
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
@@ -219,6 +219,7 @@ main {
 .announcements {
   grid-column: 2/3;
   grid-row: 1/2;
+  /* height: 50%; */
   display: grid;
   grid-template-columns: minmax(6.25rem, 1fr);
   grid-template-rows: 6, 25rem repeat(auto-fill, minmax(9.4rem, 1fr));
@@ -244,6 +245,7 @@ main {
   border-bottom-right-radius: 0.4rem;
 }
 .trend {
+  /* height: 50%; */
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
