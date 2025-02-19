@@ -161,9 +161,6 @@ main {
   display: grid;
   grid-template-rows: repeat(auto-fill, minmax(22rem, 1fr));
   grid-template-columns: 2fr 1fr;
-  /* grid-template-columns: 2fr 1fr; */
-
-  /* grid-template-rows: repeat(auto-fill, minmax(22rem, 1fr)); */
   background-color: rgb(219, 226, 236);
   gap: 1rem;
   padding: 0 1rem;
@@ -172,9 +169,6 @@ main {
 .projects {
   grid-row: 1 / -1;
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  grid-template-rows: 3.125rem repeat(auto-fill, minmax(14rem, 1fr)); */
 
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   grid-template-rows: 3.125rem repeat(auto-fit, minmax(14rem, 1fr));
@@ -191,7 +185,6 @@ main {
 }
 .card {
   display: grid;
-  /* align-items: end; */
   border-left: 0.4rem solid rgb(228, 196, 132);
   padding: 1rem;
   background-color: white;
@@ -219,14 +212,12 @@ main {
 .announcements {
   grid-column: 2/3;
   grid-row: 1/2;
-  /* height: 50%; */
   display: grid;
   grid-template-columns: minmax(6.25rem, 1fr);
   grid-template-rows: 6, 25rem repeat(auto-fill, minmax(9.4rem, 1fr));
   padding-top: 1.5rem;
 }
-.announcements-title {
-}
+
 .notification,
 .person {
   padding: 1rem;
@@ -245,7 +236,6 @@ main {
   border-bottom-right-radius: 0.4rem;
 }
 .trend {
-  /* height: 50%; */
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
