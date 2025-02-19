@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 25vh 4fr;
+}
+nav {
+  grid-row: 1/-1;
+  background-color: rgb(26, 126, 201);
+  position: relative;
+}
+.nav-container {
+  color: white;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.logo a,
+.navigation div,
+.control div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 0.625rem;
+  padding: 0.625rem;
+}
+
+.logo a:hover {
+  cursor: pointer;
+}
+.navigation div:hover,
+.control div:hover {
+  cursor: pointer;
+  background-color: rgb(38, 154, 242);
+  border-radius: 0.313rem;
+}
+.logo a {
+  gap: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+.svg-logo {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.white {
+  fill: white;
+}
+
+.navigation div span,
+.control div span {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+header {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.header-top,
+.profile-links {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.search,
+.profile-links ul,
+.profile-links div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-bar-icon:hover {
+  cursor: pointer;
+}
+
+input {
+  width: 80%;
+  background-color: rgb(219, 226, 236);
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.313rem 0.625rem;
+}
+
+.bell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.bell h2 {
+  font-size: 1rem;
+}
+
+.profile-links ul {
+  list-style-type: none;
+}
+
+.profile-links ul li {
+  background-color: rgb(26, 126, 201);
+  padding: 0.6rem 2rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.profile-links div,
+.profile-links ul {
+}
+
+/* .profile-links div {
+  display: grid;
+  grid-template-columns: 200px 200px;
+} */
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.greeting span {
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.greeting h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.profile-picture,
+.profile-avatar {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.profile-picture {
+  height: 6.25rem;
+  width: 6.25rem;
+}
+.profile-avatar {
+  height: 3.125rem;
+  width: 3.125rem;
+}
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(22rem, 1fr));
+  background-color: rgb(219, 226, 236);
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.projects {
+  grid-row: 1 / -1;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+
+  grid-template-rows: 3.125rem repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.titles {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.project-title {
+  grid-column: 1/-1;
+}
+.card {
+  border-left: 0.4rem solid rgb(228, 196, 132);
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.4rem;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+}
+.card:hover {
+  top: -0.125;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.svg-icons {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.announcements {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: minmax(6.25rem, 1fr);
+  grid-template-rows: 6, 25rem repeat(auto-fill, minmax(9.4rem, 1fr));
+  padding-top: 1.5rem;
+}
+.announcements-title {
+}
+.notification,
+.person {
+  padding: 1rem;
+  background-color: white;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+.container-border-top {
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+.container-border-bottom {
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+.trend {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 3.75rem repeat(auto-fill, minmax(5rem, 1fr));
+  padding-top: 3.3rem;
+}
+.trending-title {
+  grid-column: 1/-1;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 0.8rem;
+  align-items: center;
+}
+
+.trend div div span {
+  font-weight: 400;
+}
+
+h5 {
+  color: gray;
+  font-weight: 400;
+  margin: 0;
+}
